@@ -1,10 +1,10 @@
 <template>
   <div class="topnav">
     <div class="logo" @click="toggleAside">LOGO</div>
-    <div class="menu">
+    <ol class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
-    </div>
+    </ol>
     <span class="toggleAside" @click="toggleAside"></span>
   </div>
 </template>
@@ -22,7 +22,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .topnav {
-  background: pink;
+  background: #ffffff;
   display: flex;
   padding: 16px;
   position: fixed;
@@ -32,6 +32,7 @@ export default {
   z-index: 10;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.1);
   > .logo {
     max-width: 6em;
     margin-right: auto;
