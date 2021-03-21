@@ -21,7 +21,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .banner {
-  border: 1px solid blue;
   padding: 100px 0;
   display: flex;
   justify-content: center;
@@ -29,7 +28,6 @@ export default {
   flex-direction: column;
   background: lightgreen;
   > .actions {
-    border: 1px solid yellow;
     padding: 8px 0;
     a {
       margin: 0 8px;
