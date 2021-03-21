@@ -5,7 +5,7 @@
       <li>菜单1</li>
       <li>菜单2</li>
     </div>
-    <span class="toggleAside"></span>
+    <span class="toggleAside" @click="toggleAside"></span>
   </div>
 </template>
 <script lang="ts">
@@ -50,6 +50,7 @@ export default {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    display: none;
   }
   @media (max-width: 500px) {
     > .menu {
@@ -57,6 +58,9 @@ export default {
     }
     > .logo {
       margin: auto;
+    }
+    > .toggleAside {
+      display: inline-block;
     }
   }
 }
