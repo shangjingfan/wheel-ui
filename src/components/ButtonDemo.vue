@@ -2,9 +2,10 @@
   <div>Button 示例</div>
   <h1>示例1</h1>
   <div>
-    <Button @click="onClick" @focus="onClick" @mouseover="onClick">
-      你好
-    </Button>
+    <Button> 默认button </Button>
+    <Button theme="button"> button </Button>
+    <Button theme="link"> link </Button>
+    <Button theme="text"> text </Button>
   </div>
 </template>
 <script lang="ts">
