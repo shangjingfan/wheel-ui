@@ -3,15 +3,14 @@
     <button v-bind="rest">
       <slot />
     </button>
-    <button @mouseover="onMouseover">11223</button>
   </div>
 </template>
 <script lang="ts">
 export default {
   inheritAttrs: false,
   setup(props, context) {
-    const { onMouseover, ...rest } = context.attrs;
-    return { onMouseover, rest };
+    const { size, ...rest } = context.attrs;
+    return { size, rest };
   },
 };
 </script>
