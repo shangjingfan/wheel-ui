@@ -8,9 +8,19 @@
   </div>
   <h1>示例2-size</h1>
   <div>
-    <Button size="big"> big </Button>
-    <Button size="small"> small </Button>
-    <Button> normall </Button>
+    <Button size="big"> 大 </Button>
+    <Button> 中 </Button>
+    <Button size="small"> 小 </Button>
+  </div>
+  <div>
+    <Button theme="link" size="big"> 大 </Button>
+    <Button theme="link"> 中 </Button>
+    <Button theme="link" size="small"> 小 </Button>
+  </div>
+  <div>
+    <Button theme="text" size="big"> 大 </Button>
+    <Button theme="text"> 中 </Button>
+    <Button theme="text" size="small"> 小 </Button>
   </div>
 </template>
 <script lang="ts">
