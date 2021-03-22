@@ -1,11 +1,16 @@
 <template>
   <div>Button 示例</div>
-  <h1>示例1</h1>
+  <h1>示例1-theme</h1>
   <div>
-    <Button> 默认 </Button>
     <Button theme="button"> button </Button>
     <Button theme="link"> link </Button>
     <Button theme="text"> text </Button>
+  </div>
+  <h1>示例2-size</h1>
+  <div>
+    <Button size="big"> big </Button>
+    <Button size="small"> small </Button>
+    <Button> normall </Button>
   </div>
 </template>
 <script lang="ts">
