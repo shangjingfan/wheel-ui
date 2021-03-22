@@ -41,7 +41,7 @@ $h2: $h - 4px;
     border-radius: $h2/2;
     transition: 0.5s;
   }
-  &.checked {
+  &.wheel-checked {
     background: #1890ff;
     > span {
       left: calc(100% - #{$h2} - 2px);
@@ -55,7 +55,7 @@ $h2: $h - 4px;
       width: $h2 + 4px;
     }
   }
-  &.checked:active {
+  &.wheel-checked:active {
     > span {
       width: $h2 + 4px;
       margin-left: -4px;
