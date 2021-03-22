@@ -1,5 +1,5 @@
 <template>
-  <button class="wheel-button" :class="classes">
+  <button class="wheel-button" :class="classes" :disabled="disabled">
     <slot />
   </button>
 </template>
@@ -18,6 +18,10 @@ export default {
     level: {
       type: String,
       default: "normal",
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
     },
   },
   setup(props) {
@@ -39,7 +43,8 @@ $border-color: #d9d9d9;
 $color: #333;
 $blue: #40a9ff;
 $radius: 4px;
-$danger: red;
+$red: red;
+$grey: grey;
 .wheel-button {
   box-sizing: border-box;
   height: $h;
@@ -109,22 +114,22 @@ $danger: red;
       }
     }
     &.wheel-level-danger {
-      background: $danger;
+      background: $red;
       color: white;
-      border-color: $danger;
+      border-color: $red;
       &:hover,
       &:focus {
-        background: darken($danger, 10%);
-        border-color: darken($danger, 10%);
+        background: darken($red, 10%);
+        border-color: darken($red, 10%);
       }
     }
   }
   &.wheel-theme-link {
     &.wheel-level-danger {
-      color: $danger;
+      color: $red;
       &:hover,
       &:focus {
-        color: darken($danger, 10%);
+        color: darken($red, 10%);
       }
     }
   }
@@ -137,11 +142,27 @@ $danger: red;
       }
     }
     &.wheel-level-danger {
-      color: $danger;
+      color: $red;
       &:hover,
       &focus {
-        color: darken($danger, 10%);
+        color: darken($red, 10%);
       }
+    }
+  }
+  &.wheel-theme-button {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
+      &:hover {
+        border-color: $grey;
+      }
+    }
+  }
+  &.wheel-theme-link,
+  &.wheel-theme-text {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
     }
   }
 }
