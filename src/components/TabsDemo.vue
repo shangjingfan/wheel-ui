@@ -3,9 +3,8 @@
     <p>Tabs 示例</p>
     <h1>示例1</h1>
     <Tabs>
-      <Tab title="tab1">tab1</Tab>
-      <Tab title="tab2">tab2</Tab>
-      <div title="div">div</div>
+      <Tab title="tab1">内容1</Tab>
+      <Tab title="tab2">内容2</Tab>
     </Tabs>
   </div>
 </template>
