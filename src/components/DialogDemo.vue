@@ -7,7 +7,15 @@
     :closeOnClickOverlay="false"
     :ok="f1"
     :cancel="f2"
-  />
+  >
+    <template v-slot:content>
+      <p>你好</p>
+      <p>非常好</p>
+    </template>
+    <template v-slot:title>
+      <strong>标题</strong>
+    </template>
+  </Dialog>
 </template>
 <script lang="ts">
 import { ref } from "vue";

@@ -4,11 +4,11 @@
     <div class="wheel-dialog-wrapper">
       <div class="wheel-dialog">
         <header>
-          标题 <span @click="close" class="wheel-dialog-close"></span>
+          <slot name="title" />
+          <span @click="close" class="wheel-dialog-close"></span>
         </header>
         <main>
-          <p>第一行</p>
-          <p>第二行</p>
+          <slot name="content" />
         </main>
         <footer>
           <Button level="main" @click="ok">OK</Button>
