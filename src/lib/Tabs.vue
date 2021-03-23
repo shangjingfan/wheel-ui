@@ -12,8 +12,11 @@
       </div>
     </div>
     <div class="wheel-tabs-content">
-      {{ current }}
-      <component class="wheel-tabs-content-item" :is="current" />
+      <component
+        class="wheel-tabs-content-item"
+        :is="current"
+        :key="selected"
+      />
     </div>
   </div>
 </template>
