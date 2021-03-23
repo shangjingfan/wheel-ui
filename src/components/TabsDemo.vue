@@ -5,6 +5,7 @@
     <Tabs>
       <Tab title="tab1">tab1</Tab>
       <Tab title="tab2">tab2</Tab>
+      <div title="div">div</div>
     </Tabs>
   </div>
 </template>
