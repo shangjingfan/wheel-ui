@@ -47,7 +47,7 @@ $color: #28d1c9;
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
   justify-content: center;
   align-items: center;
   > .logo {
@@ -75,7 +75,6 @@ $color: #28d1c9;
     top: 50%;
     transform: translateY(-50%);
     display: none;
-    // background: fade-out(#000000, 0.9);
   }
   @media (max-width: 500px) {
     > .menu {
