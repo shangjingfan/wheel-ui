@@ -18,13 +18,7 @@
       <div class="wheel-tabs-nav-indicator" ref="indicator"></div>
     </div>
     <div class="wheel-tabs-content">
-      <component
-        class="wheel-tabs-content-item"
-        :class="{ selected: c.props.title === selected }"
-        v-for="c in defaults"
-        :is="c"
-        :key="c"
-      />
+      <component :is="current" :key="current.props.title" />
     </div>
   </div>
 </template>
@@ -54,6 +48,9 @@ export default {
     });
 
     const defaults = context.slots.default();
+    const current = computed(() => {
+      return defaults.filter((tag) => tag.props.title === props.selected)[0];
+    });
     defaults.forEach((tag) => {
       if (tag.type !== Tab) {
         throw new Error("Tabs子标签必须是Tab");
@@ -73,6 +70,7 @@ export default {
       indicator,
       container,
       selectedItem,
+      current,
     };
   },
 };
@@ -111,12 +109,6 @@ $border-color: #d9d9d9;
   }
   &-content {
     padding: 8px 0;
-    &-item {
-      display: none;
-      &.selected {
-        display: block;
-      }
-    }
   }
 }
 </style>
