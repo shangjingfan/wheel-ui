@@ -10,6 +10,7 @@
       >
         {{ t }}
       </div>
+      <div class="wheel-tabs-nav-indicator"></div>
     </div>
     <div class="wheel-tabs-content">
       <component
@@ -17,6 +18,7 @@
         :class="{ selected: c.props.title === selected }"
         v-for="c in defaults"
         :is="c"
+        :key="c"
       />
     </div>
   </div>
@@ -63,6 +65,7 @@ $border-color: #d9d9d9;
     display: flex;
     color: $color;
     border-bottom: 1px solid $border-color;
+    position: relative;
     &-item {
       padding: 8px 0;
       margin: 0 16px;
@@ -73,6 +76,15 @@ $border-color: #d9d9d9;
       &.selected {
         color: $blue;
       }
+    }
+    &-indicator {
+      border: 1px solid blue;
+      position: absolute;
+      height: 3px;
+      background: $blue;
+      left: 0;
+      width: 100px;
+      bottom: -1px;
     }
   }
   &-content {
