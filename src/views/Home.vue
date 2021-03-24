@@ -112,9 +112,6 @@ $color: #28d1c9;
       background: $green;
       color: white;
       display: inline-block;
-      $h: 28px;
-      // height: $h;
-      // line-height: $h;
       border-radius: $border-radius;
       padding: 8px 24px;
       &:hover {
