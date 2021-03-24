@@ -1,10 +1,10 @@
 <template>
   <div class="topnav">
-    <div class="logo" @click="toggleAside">
+    <router-link to="/" class="logo" @click="toggleAside">
       <svg class="icon">
         <use xlink:href="#icon-wheel"></use>
       </svg>
-    </div>
+    </router-link>
     <ol class="menu">
       <li>
         <router-link to="/doc">文档</router-link>
@@ -38,7 +38,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+$color: #28d1c9;
 .topnav {
+  color: $color;
   display: flex;
   padding: 16px;
   position: fixed;
@@ -73,7 +75,7 @@ export default {
     top: 50%;
     transform: translateY(-50%);
     display: none;
-    background: fade-out(#000000, 0.9);
+    // background: fade-out(#000000, 0.9);
   }
   @media (max-width: 500px) {
     > .menu {
