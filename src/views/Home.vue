@@ -1,13 +1,26 @@
 <template>
-  <div class="topnavAndBanner">
-    <Topnav />
-    <div class="banner">
-      <h1>wheel-UI</h1>
-      <h2>一个UI框架</h2>
-      <p class="actions">
-        <a href="">GitHub</a>
-        <router-link to="/doc">开始</router-link>
-      </p>
+  <div>
+    <div class="topnavAndBanner">
+      <Topnav />
+      <div class="banner">
+        <h1>wheel-UI</h1>
+        <h2>一个UI框架</h2>
+        <p class="actions">
+          <a href="">GitHub</a>
+          <router-link to="/doc">开始</router-link>
+        </p>
+      </div>
+    </div>
+    <div class="features">
+      <svg class="icon">
+        <use xlink:href="#icon-vue"></use>
+      </svg>
+      <svg class="icon">
+        <use xlink:href="#icon-ts"></use>
+      </svg>
+      <svg class="icon">
+        <use xlink:href="#icon-light"></use>
+      </svg>
     </div>
   </div>
 </template>
@@ -31,6 +44,13 @@ $color: #28d1c9;
     rgba(183, 233, 230, 1) 100%
   );
 }
+.features {
+  > svg {
+    width: 64px;
+    height: 64px;
+  }
+}
+
 .banner {
   color: $color;
   padding: 100px 0;
