@@ -6,9 +6,6 @@ import ButtonDemo from './components/ButtonDemo.vue'
 import DialogDemo from './components/DialogDemo.vue'
 import TabsDemo from './components/TabsDemo.vue'
 import DocDemo from './components/DocDemo.vue'
-import Intro from "./views/Intro.vue"
-import GetStart from "./views/GetStart.vue"
-import Install from "./views/Install.vue"
 import { h } from '@vue/runtime-core'
 import Markdown from './components/Markdown.vue'
 const md = (filename:string) => h(Markdown, {path: `../markdown/${filename}.md`, key:filename} )
