@@ -1,10 +1,5 @@
 <template>
-  <button
-    class="wheel-button"
-    :class="classes"
-    :disabled="disabled"
-    :loading="loading"
-  >
+  <button class="wheel-button" :class="classes" :disabled="disabled">
     <span v-if="loading" class="wheel-loadingIndicator"></span>
     <slot />
   </button>
