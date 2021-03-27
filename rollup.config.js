@@ -1,8 +1,8 @@
-import esbuild from 'rollup-plugin-esbuild'
-import vue from 'rollup-plugin-vue'
-import scss from 'rollup-plugin-scss'
-import dartSass from 'sass';
-import { terser } from "rollup-plugin-terser"
+import esbuild from 'rollup-plugin-esbuild' 
+import vue from 'rollup-plugin-vue' // vue->js
+import scss from 'rollup-plugin-scss' // css->js
+import dartSass from 'sass'; // 支持上面
+import { terser } from "rollup-plugin-terser" //丑化代码
 
 export default {
   input: 'src/lib/index.ts',
