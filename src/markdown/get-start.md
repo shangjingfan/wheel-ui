@@ -5,7 +5,7 @@
 然后在你的代码中写入下面的代码
 
 ```
-import {Button, Tabs, Switch, Dialog} from "wheel-ui"
+import {Button, Tabs, Tab, Switch, Dialog} from "wheel-ui-sjf"
 ```
 
 就可以使用我提供的组件了。
