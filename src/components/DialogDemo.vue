@@ -1,5 +1,7 @@
 <template>
-  <h1>Dialog示例</h1>
+  <br />
+  <h2>Dialog 对话框</h2>
+  <br />
   <Demo :component="Dialog1Demo" />
   <Demo :component="Dialog2Demo" />
 </template>
