@@ -48,6 +48,7 @@ export default {
 $border-color: #d9d9d9;
 
 .demo {
+  max-width: 640px;
   border: 1px solid $border-color;
   margin: 16px 0 32px;
   > h2 {
@@ -70,6 +71,9 @@ $border-color: #d9d9d9;
       font-family: Consolas, "Couier New", Courier, monospace;
       margin: 0;
     }
+  }
+  &:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   }
 }
 </style>

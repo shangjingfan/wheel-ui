@@ -1,5 +1,5 @@
 <demo>
-  显示加载中
+  加载中
 </demo>
 
 <template>

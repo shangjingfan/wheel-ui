@@ -46,6 +46,10 @@ export default {
 $h: 32px;
 $border-color: #d9d9d9;
 $color: #333;
+$main: #6190e8;
+$success: #13ce66;
+$danger: #ff4949;
+$warning: #ffc82c;
 $blue: #40a9ff;
 $radius: 4px;
 $red: red;
@@ -54,6 +58,7 @@ $grey: grey;
   box-sizing: border-box;
   height: $h;
   padding: 0 12px;
+
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -79,24 +84,57 @@ $grey: grey;
   &::-moz-focus-inner {
     border: 0;
   }
-  &.wheel-theme-link {
+  &.wheel-theme-main {
     border-color: transparent;
     box-shadow: none;
-    color: $blue;
+    color: white;
+    background: $main;
     &:hover,
     &:focus {
-      color: lighten($blue, 10%);
+      background: lighten($main, 5%);
     }
   }
-  &.wheel-theme-text {
+  &.wheel-theme-main {
     border-color: transparent;
     box-shadow: none;
-    color: inherit;
+    color: white;
+    background: $main;
     &:hover,
     &:focus {
-      background: darken(white, 5%);
+      background: lighten($main, 8%);
     }
   }
+  &.wheel-theme-success {
+    border-color: transparent;
+    box-shadow: none;
+    color: white;
+    background: $success;
+    &:hover,
+    &:focus {
+      background: lighten($success, 8%);
+    }
+  }
+  &.wheel-theme-danger {
+    border-color: transparent;
+    box-shadow: none;
+    color: white;
+    background: $danger;
+    &:hover,
+    &:focus {
+      background: lighten($danger, 8%);
+    }
+  }
+  &.wheel-theme-warning {
+    border-color: transparent;
+    box-shadow: none;
+    color: white;
+    background: $warning;
+    &:hover,
+    &:focus {
+      background: lighten($warning, 8%);
+    }
+  }
+
   &.wheel-size-big {
     font-size: 24px;
     height: 44px;
@@ -107,77 +145,40 @@ $grey: grey;
     height: 20px;
     padding: 0 4px;
   }
-  &.wheel-theme-button {
-    &.wheel-level-main {
-      background: $blue;
+  &[disabled] {
+    cursor: not-allowed;
+    color: $grey;
+    &:hover {
+      border-color: rgb(217, 217, 217);
+    }
+    &.wheel-theme-main {
+      border-color: rgb(217, 217, 217);
       color: white;
-      border-color: $blue;
-      &:hover,
-      &:focus {
-        background: darken($blue, 10%);
-        border-color: darken($blue, 10%);
-      }
+      background: lighten($main, 20%);
     }
-    &.wheel-level-danger {
-      background: $red;
+    &.wheel-theme-success {
+      border-color: rgb(217, 217, 217);
       color: white;
-      border-color: $red;
-      &:hover,
-      &:focus {
-        background: darken($red, 10%);
-        border-color: darken($red, 10%);
-      }
+      background: lighten($success, 20%);
     }
-  }
-  &.wheel-theme-link {
-    &.wheel-level-danger {
-      color: $red;
-      &:hover,
-      &:focus {
-        color: darken($red, 10%);
-      }
+    &.wheel-theme-danger {
+      border-color: rgb(217, 217, 217);
+      color: white;
+      background: lighten($danger, 20%);
     }
-  }
-  &.wheel-theme-text {
-    &.wheel-level-main {
-      color: $blue;
-      &:hover,
-      &:focus {
-        color: darken($blue, 10%);
-      }
-    }
-    &.wheel-level-danger {
-      color: $red;
-      &:hover,
-      &focus {
-        color: darken($red, 10%);
-      }
-    }
-  }
-  &.wheel-theme-button {
-    &[disabled] {
-      cursor: not-allowed;
-      color: $grey;
-      &:hover {
-        border-color: $grey;
-      }
-    }
-  }
-  &.wheel-theme-link,
-  &.wheel-theme-text {
-    &[disabled] {
-      cursor: not-allowed;
-      color: $grey;
+    &.wheel-theme-warning {
+      border-color: rgb(217, 217, 217);
+      color: white;
+      background: lighten($warning, 20%);
     }
   }
   > .wheel-loadingIndicator {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     display: inline-block;
     margin-right: 4px;
-    border-radius: 8px;
-    border-color: $blue $blue $blue transparent;
-    border-style: solid;
+    border-color: rgb(182, 177, 177);
+    border-style: dashed;
     border-width: 2px;
     animation: wheel-spin 1s infinite linear;
   }

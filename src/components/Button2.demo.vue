@@ -1,22 +1,12 @@
 <demo>
-支持size
+不同尺寸
 </demo>
 
 <template>
   <div>
-    <Button size="big"> 大 </Button>
-    <Button> 中 </Button>
-    <Button size="small"> 小 </Button>
-  </div>
-  <div>
-    <Button theme="link" size="big"> 大 </Button>
-    <Button theme="link"> 中 </Button>
-    <Button theme="link" size="small"> 小 </Button>
-  </div>
-  <div>
-    <Button theme="text" size="big"> 大 </Button>
-    <Button theme="text"> 中 </Button>
-    <Button theme="text" size="small"> 小 </Button>
+    <Button size="big"> 大型按钮 </Button>
+    <Button> 默认按钮 </Button>
+    <Button size="small"> 小型按钮 </Button>
   </div>
 </template>
 <script lang="ts">

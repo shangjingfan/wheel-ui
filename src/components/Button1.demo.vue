@@ -2,9 +2,11 @@
 
 <template>
   <div>
-    <Button> button </Button>
-    <Button theme="link"> link </Button>
-    <Button theme="text"> text </Button>
+    <Button> 默认按钮 </Button>
+    <Button theme="main"> 主要按钮 </Button>
+    <Button theme="success"> 成功按钮 </Button>
+    <Button theme="warning"> 警告按钮 </Button>
+    <Button theme="danger"> 危险按钮 </Button>
   </div>
 </template>
 
