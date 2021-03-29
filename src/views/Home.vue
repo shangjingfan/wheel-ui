@@ -4,9 +4,11 @@
       <Topnav />
       <div class="banner">
         <h1>wheel-UI</h1>
-        <h2>一个UI框架</h2>
+        <h2>一个简单的UI库</h2>
         <p class="actions">
-          <a href="">GitHub</a>
+          <a href="https://github.com/shangjingfan/wheel-ui" target="_blank"
+            >GitHub</a
+          >
           <router-link to="/doc">开始</router-link>
         </p>
       </div>
@@ -47,17 +49,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$green: #02bcb0;
+$green: #57a3f3;
 $border-radius: 4px;
-$color: #28d1c9;
+$color: blacks;
 .topnavAndBanner {
   color: $color;
-  background: linear-gradient(
-    145deg,
-    rgba(227, 255, 253, 1) 0%,
-    rgba(183, 233, 230, 1) 100%
-  );
-  clip-path: ellipse(80% 60% at 50% 40%);
+  background: #b6dff9;
+  // clip-path: ellipse(80% 60% at 50% 40%);
 }
 .features {
   margin: 64px auto;

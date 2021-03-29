@@ -1594,7 +1594,7 @@ node-forge@^0.10.0:
   resolved "https://registry.npm.taobao.org/node-forge/download/node-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
   integrity sha1-Mt6ir7Ppkm8C7lzoeUkCaRpna/M=
 
-node-sass@4, "node-sass@npm:sass@1.26.11", sass@1.26.11:
+node-sass@1.26.11, node-sass@4, "node-sass@npm:sass@1.26.11", sass@1.26.11:
   version "1.26.11"
   resolved "https://registry.npm.taobao.org/sass/download/sass-1.26.11.tgz#0f22cc4ab2ba27dad1d4ca30837beb350b709847"
   integrity sha1-DyLMSrK6J9rR1Mowg3vrNQtwmEc=

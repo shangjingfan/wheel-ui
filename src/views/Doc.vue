@@ -18,7 +18,7 @@
         <h2>组件列表</h2>
         <ol>
           <li>
-            <router-link to="/doc/switch">Switch 组件</router-link>
+            <router-link to="/doc/switch">Switch 开关</router-link>
           </li>
           <li>
             <router-link to="/doc/button">Button 组件</router-link>
@@ -58,6 +58,8 @@ $aside-index: 10;
   height: 100vh;
   > .nav {
     flex-shrink: 0;
+    background: #b6dff9;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
   }
   > .content {
     flex-grow: 1;
@@ -80,7 +82,8 @@ $aside-index: 10;
   }
 }
 aside {
-  background: lightblue;
+  background: #b6dff9;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   width: 150px;
   padding: 16px 0;
   position: fixed;
@@ -98,6 +101,9 @@ aside {
       a {
         display: block;
         padding: 4px 16px;
+        &:hover {
+          background: #e6f7ff;
+        }
       }
       > .router-link-active {
         background: white;
