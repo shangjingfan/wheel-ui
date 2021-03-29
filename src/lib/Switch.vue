@@ -61,5 +61,13 @@ $h2: $h - 4px;
       margin-left: -4px;
     }
   }
+  &[disabled] {
+    cursor: not-allowed;
+    &:active {
+      > span {
+        width: $h2;
+      }
+    }
+  }
 }
 </style>
