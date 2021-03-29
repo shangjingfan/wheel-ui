@@ -9,7 +9,7 @@
           <a href="https://github.com/shangjingfan/wheel-ui" target="_blank"
             >GitHub</a
           >
-          <router-link to="/doc">开始</router-link>
+          <router-link to="/doc/intro">开始</router-link>
         </p>
       </div>
     </div>
@@ -51,7 +51,7 @@ export default {
 <style lang="scss" scoped>
 $green: #57a3f3;
 $border-radius: 4px;
-$color: blacks;
+$color: black;
 .topnavAndBanner {
   color: $color;
   background: #b6dff9;
@@ -123,6 +123,7 @@ $color: blacks;
       border-radius: $border-radius;
       padding: 8px 24px;
       &:hover {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         text-decoration: none;
       }
     }

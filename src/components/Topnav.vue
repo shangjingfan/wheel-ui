@@ -7,7 +7,7 @@
     </router-link>
     <ol class="menu">
       <li>
-        <router-link to="/doc">文档</router-link>
+        <router-link to="/doc/intro">文档</router-link>
       </li>
     </ol>
     <svg
@@ -64,6 +64,9 @@ $color: #030507;
     white-space: nowrap;
     flex-wrap: nowrap;
     > li {
+      &:hover {
+        color: blue;
+      }
       margin: 0 1em;
     }
   }
