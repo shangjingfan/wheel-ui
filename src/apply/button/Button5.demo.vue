@@ -9,7 +9,7 @@
   </div>
 </template>
 <script lang="ts">
-import { Button } from "../lib/index";
+import { Button } from "../../lib";
 
 export default {
   components: {

@@ -6,8 +6,8 @@
   <Demo :component="Switch2Demo" />
 </template>
 <script lang="ts">
-import Switch1Demo from "../components/Switch1.demo.vue";
-import Switch2Demo from "../components/Switch2.demo.vue";
+import Switch1Demo from "../apply/switch/Switch1.demo.vue";
+import Switch2Demo from "../apply/switch/Switch2.demo.vue";
 
 import Demo from "../components/Demo.vue";
 

@@ -1,14 +1,13 @@
 <demo>
- 常规用法
+  禁用状态
 </demo>
 
 <template>
-  <Switch v-model:value="bool" />
+  <Switch v-model:value="bool" disabled />
 </template>
 <script lang="ts">
 import { ref } from "vue";
-import { Switch } from "../lib/index";
-
+import { Switch } from "../../lib";
 export default {
   components: {
     Switch,
