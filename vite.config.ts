@@ -3,7 +3,6 @@
 import { md } from "./plugins/md";
 import fs from 'fs'
 import {baseParse} from '@vue/compiler-core'
-
 export default {
   base:'./',
   assetsDir: 'assets',
@@ -22,5 +21,5 @@ export default {
         Component.__sourceCodeTitle = ${JSON.stringify(title)}
       }`.trim()
     }
-  }
+  },
 };

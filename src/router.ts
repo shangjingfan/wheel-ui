@@ -5,6 +5,7 @@ import SwitchDemo from './components/SwitchDemo.vue'
 import ButtonDemo from './components/ButtonDemo.vue'
 import DialogDemo from './components/DialogDemo.vue'
 import TabsDemo from './components/TabsDemo.vue'
+import RadioDemo from './components/RadioDemo.vue'
 import { h } from '@vue/runtime-core'
 import Markdown from './components/Markdown.vue'
 import intro from './markdown/intro.md';
@@ -28,6 +29,7 @@ export const router = createRouter({
         {path:'button', component: ButtonDemo},
         {path:'dialog', component: DialogDemo},
         {path:'tabs', component: TabsDemo},
+        {path:'radio', component: RadioDemo},
       ]
     },
   ]
