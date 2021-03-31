@@ -33,11 +33,12 @@
 
 <style scoped lang="scss">
   $h: 16px;
+  $color: #409eff;
   .wheel-radios {
     display: flex;
     align-items: center;
+    color: #606266;
     &-item {
-      border: 1px solid blue;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -54,14 +55,14 @@
       &:hover{
         cursor: pointer;
         > span{
-          border: 2px solid blue;
+          border: 2px solid $color;
         }
       }
     }
     .selected {
-      color: blue;
+      color: $color;
       > span{
-        border: 6px solid blue;
+        border: 6px solid $color;
       }
     }
   }

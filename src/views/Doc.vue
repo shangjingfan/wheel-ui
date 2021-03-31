@@ -30,7 +30,7 @@
             <router-link to="/doc/tabs">Tabs 标签页</router-link>
           </li>
           <li>
-            <router-link to="/doc/radio">Radio 单选框</router-link>
+            <router-link to="/doc/radios">Radios 单选框</router-link>
           </li>
         </ol>
       </aside>

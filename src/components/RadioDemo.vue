@@ -1,25 +1,18 @@
+
 <template>
-  <div>
-    <Radios v-model:selected="x">
-      <Radio label="1">选项1</Radio>
-      <Radio label="2">选项2</Radio>
-      <Radio label="3">选项3</Radio>
-    </Radios>
-  </div>
+  <br />
+  <h2>Radios 单选框</h2>
+  <br />
+  <Demo :component="Radios1Demo" />
 </template>
 
 <script lang="ts">
-  import Radios from '../lib/Radios.vue';
-  import Radio from '../lib/Radio.vue';
-  import { ref } from 'vue';
-
+  import Demo from './Demo.vue';
+  import Radios1Demo from '../apply/radios/Radios1Demo.vue';
   export default {
-    components: {
-      Radio, Radios
-    },
+    components:{Demo},
     setup(){
-      const x = ref('3')
-      return {x}
+      return {Radios1Demo}
     }
   };
 </script>
