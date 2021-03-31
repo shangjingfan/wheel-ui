@@ -177,8 +177,9 @@ $grey: grey;
     height: 12px;
     display: inline-block;
     margin-right: 4px;
-    border-color: rgb(182, 177, 177);
-    border-style: dashed;
+    border-color: rgb(182, 177, 177) rgb(182, 177, 177) rgb(182, 177, 177) transparent;
+    border-style: solid;
+    border-radius: 50%;
     border-width: 2px;
     animation: wheel-spin 1s infinite linear;
   }
