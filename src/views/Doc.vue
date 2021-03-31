@@ -32,6 +32,9 @@
           <li>
             <router-link to="/doc/radios">Radios 单选框</router-link>
           </li>
+          <li>
+            <router-link to="/doc/collapse">Collapse 折叠</router-link>
+          </li>
         </ol>
       </aside>
       <main>

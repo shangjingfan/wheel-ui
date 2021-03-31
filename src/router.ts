@@ -11,6 +11,7 @@ import Markdown from './components/Markdown.vue'
 import intro from './markdown/intro.md';
 import install from './markdown/install.md';
 import getStart from './markdown/get-start.md';
+import CollapseDemo from './components/CollapseDemo.vue';
 const md = (string) => h(Markdown, {content: string, key:string} )
 
 
@@ -30,6 +31,7 @@ export const router = createRouter({
         {path:'dialog', component: DialogDemo},
         {path:'tabs', component: TabsDemo},
         {path:'radios', component: RadioDemo},
+        {path:'collapse', component: CollapseDemo},
       ]
     },
   ]
