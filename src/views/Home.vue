@@ -20,7 +20,7 @@
             <use xlink:href="#icon-vue"></use>
           </svg>
           <h3>基于Vue3</h3>
-          <p>骄傲的使用了Vue3 Composition API</p>
+          <p>使用了Vue3 Composition API</p>
         </li>
         <li>
           <svg class="icon">
@@ -34,7 +34,7 @@
             <use xlink:href="#icon-light"></use>
           </svg>
           <h3>代码易读</h3>
-          <p>每个组件的源代码就极其简洁</p>
+          <p>每个组件的源代码极其简洁</p>
         </li>
       </ul>
     </div>
